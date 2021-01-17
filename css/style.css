@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+button:focus {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: Roboto;
+  width: 100%;
+}
+
+/* 유튜브 header */
+header {
+  padding: 12px 20px;
+  background: #38006b;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo i {
+  color: #fff;
+  margin-right: 5px;
+}
+
+.logo span {
+  font: 18px bold;
+  color: #fff;
+}
+
+.icons {
+  cursor: pointer;
+}
+
+.icons i {
+  margin-right: 5px;
+}
+
+/* 유튜브 video */
+.player {
+  text-align: center;
+  background: #000;
+}
+
+.player video {
+  width: 100%;
+  max-width: 780px;
+  height: 100%;
+}
+
+.player video:focus {
+  outline: none;
+}
+
+/* 유튜브 info */
+.info {
+  padding: 12px 20px;
+  position: relative;
+}
+
+.info .metadata .hashtages {
+  display: flex;
+  color: #9c4dcc;
+  font: 12px bold;
+  margin-bottom: 12px;
+}
+
+.info .metadata .hashtages li {
+  margin-right: 8px;
+}
+
+.info .metadata .titleAndBtn {
+  display: flex;
+}
+
+.info .metadata .titleAndBtn .title {
+  max-width: 1080px;
+  margin: 0 24px 8px 0;
+  font: 18px bold;
+  color: #000;
+}
+
+.info .metadata .titleAndBtn .title.clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.info .metadata .titleAndBtn button {
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.info .metadata .titleAndBtn button.clicked {
+  transform: rotate(180deg);
+}
+
+.info .metadata .views {
+  font: 8px bold;
+  color: #ababab;
+}
+
+.info .actions {
+  display: flex;
+  justify-content: space-around;
+  margin: 14px 0 16px;
+}
+
+.info .actions li button {
+  display: flex;
+  flex-direction: column;
+}
+
+.info .actions li button i {
+  margin: 0 auto;
+  color: #858585;
+}
+
+.info .actions li button i.active {
+  color: #9c4dcc;
+}
+
+/* profile */
+.info .profile {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 0 8px 0;
+  align-items: center;
+  border-top: 1px solid #ababab;
+  border-bottom: 1px solid #ababab;
+}
+
+.info .profile .profileData {
+  display: flex;
+  align-items: center;
+}
+
+.info .profile .profileData img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+}
+
+.info .profile .profileInfo {
+  display: flex;
+  flex-direction: column;
+  color: #2c2c2c;
+}
+
+.info .profile .profileInfo .subscribers {
+  font: 12px bold;
+}
+
+.info .profile .subscribes {
+  color: #9c4dcc;
+}
+
+/* 다음 재생 리스트 Up Next */
+.upNext {
+  padding: 12px 20px;
+}
+
+.upNext .title {
+  font: 14px bold;
+  color: #858585;
+}
+
+.upNext .nextVideo {
+  margin: 6px 0 24px 0;
+  display: flex;
+}
+
+.upNext .nextVideo img {
+  width: 160px;
+  height: 90px;
+  margin: 0 14px 0 0;
+}
+
+.upNext .nextVideo .nextVideoInfo {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.upNext .nextVideo .nextVideoInfo .title {
+  font: 14px bold;
+  color: #2c2c2c;
+}
+
+.upNext .nextVideo .nextVideoInfo .name,
+.views {
+  font: 12px bold;
+  color: #858585;
+}
+
+.upNext .nextVideo .moreBtn {
+  height: 100%;
+}
+
+.infoAndUpnext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndUpnext {
+    flex-direction: row;
+  }
+}
