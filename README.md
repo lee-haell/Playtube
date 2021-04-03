@@ -2,11 +2,11 @@
 
 ### 주요기능
 
-1. 유투브 클론코딩
-2. 미디어 쿼리를 이용한 반응형
-3. flex를 활용한 수평 레이아웃
+1. Youtube Clone Coding
+2. Media Queries를 이용한 반응형
+3. Flex를 활용한 수평 레이아웃
 
-- Youtube CloneCoding - Playtube
+- HTML5 / CSS3
 
 > Playtube [플레이튜브 바로가기][플레이튜브링크]
 
